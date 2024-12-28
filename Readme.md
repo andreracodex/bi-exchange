@@ -37,9 +37,5 @@ If you're using Laravel 5.5 or later, the migration will be automatically publis
 If you want to manually publish the migration and models, you can use the following command (if something wrong):
 
 ```bash
-php artisan vendor:publish --provider="Andreracodex\BiExchange\FetchExchangeServiceProvider" --tag="migrations"
-```
-
-```bash
-php artisan vendor:publish --provider="AndreRacodex\BiExchange\FetchExchangeServiceProvider" --tag="currency-model"
+php artisan vendor:publish --tag="bi"
 ```
