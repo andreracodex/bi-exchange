@@ -27,12 +27,12 @@ class FetchExchangeServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/Database/Migrations' => database_path('migrations'),
+            __DIR__ . '/../database/migrations' => database_path('migrations'),
         ], 'migrations');
 
 
         $this->publishes([
-            __DIR__ . '/Stubs/Currency.stub' => app_path('Models/Currency.php')
+            __DIR__ . '/../stubs/Currency.stub' => app_path('Models/Currency.php'),
         ], 'currency-model');
     }
 }
