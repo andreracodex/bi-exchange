@@ -4,6 +4,11 @@
     "keywords": ["laravel", "exchange", "currency", "rates", "bi", "bank-indonesia", "valas"],
     "type": "library",
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Andreracodex\\BiExchange\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Tirta Rachmandiri Widiantoro",
@@ -15,15 +20,10 @@
         "illuminate/console": "^8.0|^9.0|^10.0|^11.0",
         "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
     },
-    "autoload": {
-        "psr-4": {
-            "Andreracodex\\BiExchange\\": "src/"
-        }
-    },
     "extra": {
         "laravel": {
             "providers": [
-                "Andreracodex\\BiExchange\\FetchExchangeServiceProvider"
+                "Andreracodex\\BiExchange\\BiExchangeServiceProvider"
             ]
         }
     },
