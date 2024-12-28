@@ -12,11 +12,13 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "illuminate/console": "^8.0|^9.0|^10.0|^11.0",
         "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
     },
     "autoload": {
         "psr-4": {
-            "Andreracodex\\BiExchange\\": "src/"
+            "Andreracodex\\BiExchange\\": "src/",
+            "AndreRacodex\\BiExchange\\Models\\": "src/Models/"
         }
     },
     "extra": {
@@ -25,6 +27,11 @@
                 "Andreracodex\\BiExchange\\FetchExchangeServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "php artisan vendor:publish --provider='AndreRacodex\\BiExchange\\FetchExchangeServiceProvider' --tag=migrations"
+        ]
     },
     "minimum-stability": "stable",
     "prefer-stable": true
