@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace AndreRacodex\BiExchange\Console\Commands;
 
 use App\Models\Currency;
 use DOMDocument;

@@ -1,32 +1,30 @@
 {
     "name": "andreracodex/bi-exchange",
-    "description": "A package to fetch exchange rates from Bank Indonesia.",
+    "description": "A package to fetch exchange rates from Bank Indonesia",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "YourVendor\\FetchExchange\\": "src/"
+    "authors": [
+        {
+            "name": "Tirta Rachmandiri Widiantoro",
+            "email": "racodex@gmail.com"
         }
-    },
+    ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0",
-        "andreacodex/bi-exchange": "dev-main"
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "andreracodex\\BiExchange\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "andreracodex\\FetchExchange\\FetchExchangeServiceProvider"
-            ],
-            "aliases": {
-                "FetchExchange": "andreracodex\\FetchExchange\\Facades\\FetchExchange"
-            }
+                "andreracodex\\BiExchange\\ServiceProvider"
+            ]
         }
     },
-    "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/andreacodex/bi-exchange"
-    }
-  ]
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
