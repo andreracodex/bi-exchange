@@ -38,5 +38,5 @@ If you're using Laravel 5.5 or later, the migration will be automatically publis
 If you want to manually publish the migration, you can use the following command:
 
 ```bash
-php artisan vendor:publish --provider="YourVendor\FetchExchange\FetchExchangeServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Andreracodex\BiExchange\FetchExchangeServiceProvider" --tag="migrations"
 ```
