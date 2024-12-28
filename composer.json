@@ -10,7 +10,8 @@
     },
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0"
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "andreacodex/bi-exchange": "dev-main"
     },
     "extra": {
         "laravel": {
@@ -21,5 +22,11 @@
                 "FetchExchange": "andreracodex\\FetchExchange\\Facades\\FetchExchange"
             }
         }
+    },
+    "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/andreacodex/bi-exchange"
     }
+  ]
 }
