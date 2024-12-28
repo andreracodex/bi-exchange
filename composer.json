@@ -1,5 +1,5 @@
 {
-    "name": "andreracodex/fetch-exchange",
+    "name": "andreracodex/bi-exchange",
     "description": "A package to fetch exchange rates from Bank Indonesia.",
     "type": "library",
     "license": "MIT",
