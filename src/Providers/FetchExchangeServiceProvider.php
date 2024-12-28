@@ -31,7 +31,7 @@ class FetchExchangeServiceProvider extends ServiceProvider
             __DIR__.'/../../database/migrations' => database_path('migrations'),
         ], 'migrations');
 
-        // Publish the model (if you want to allow users to publish it)
+        // Publish the Currency model
         $this->publishes([
             __DIR__.'/../../src/Models/Currency.php' => app_path('Models/Currency.php'),
         ], 'models');

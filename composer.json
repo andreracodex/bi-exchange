@@ -17,20 +17,20 @@
     },
     "autoload": {
         "psr-4": {
-            "Andreracodex\\BiExchange\\": "src/",
-            "AndreRacodex\\BiExchange\\Models\\": "src/Models/"
+            "Andreracodex\\BiExchange\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Andreracodex\\BiExchange\\FetchExchangeServiceProvider"
+                "Andreracodex\\BiExchange\\Providers\\FetchExchangeServiceProvider"
             ]
         }
     },
     "scripts": {
         "post-autoload-dump": [
-            "php artisan vendor:publish --provider='AndreRacodex\\BiExchange\\FetchExchangeServiceProvider' --tag=migrations --tag=currency-model"
+            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\Providers\\FetchExchangeServiceProvider --tag=migrations",
+            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\Providers\\FetchExchangeServiceProvider --tag=models"
         ]
     },
     "minimum-stability": "stable",
