@@ -16,8 +16,8 @@ class BiExchangeServiceProvider extends ServiceProvider
 
             // Publishing the migration with a dynamic timestamp
             $this->publishes([
-                __DIR__.'/../database/migrations/create_currencies_table.php' => database_path('migrations/'.date('Y_m_d_His').'_create_currencies_table.php'),
-            ], 'migrations');
+                base_path('vendor/andreracodex/bi-exchange/database/migrations') => database_path('migrations'),
+            ], 'migrations');            
         }
     }
 
