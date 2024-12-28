@@ -27,7 +27,7 @@ class FetchExchangeServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../Database/Migrations/create_currencies_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_currencies_table.php'),
+            __DIR__ . '/database/migrations' => database_path('migrations'),
         ], 'migrations');
 
 
