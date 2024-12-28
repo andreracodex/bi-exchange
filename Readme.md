@@ -16,7 +16,7 @@ A Laravel package to fetch exchange rates from Bank Indonesia (BI) and update th
 You can install this package via Composer. Run the following command in your Laravel project directory:
 
 ```bash
-composer require andreracodex/fetch-exchange
+composer require andreracodex/bi-exchange
 ```
 ### 2. Get Rate from BI
 
