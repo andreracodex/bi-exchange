@@ -21,7 +21,7 @@ class BiExchangeServiceProvider extends ServiceProvider
 
             // Publish Models
             $this->publishes([
-                base_path('vendor/andreracodex/bi-exchange/src/Models') => app_path('Models'),
+                base_path('vendor/andreracodex/bi-exchange/src/models') => app_path('Models'),
             ], 'models');         
         }
     }
