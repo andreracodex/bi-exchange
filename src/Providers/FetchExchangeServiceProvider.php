@@ -28,7 +28,7 @@ class FetchExchangeServiceProvider extends ServiceProvider
     {
         // Publish the migrations
         $this->publishes([
-            __DIR__.'/../../database/migrations' => database_path('migrations'),
+            __DIR__.'/../../src/database/migrations' => database_path('migrations'),
         ], 'migrations');
 
         // Publish the Currency model
