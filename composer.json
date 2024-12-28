@@ -30,8 +30,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\BiExchangeServiceProvider --tag=migrations",
-            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\BiExchangeServiceProvider --tag=models"
+            "php artisan vendor:publish --tag=bi"
         ]
     },
     "minimum-stability": "stable",
