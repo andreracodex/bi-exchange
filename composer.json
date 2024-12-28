@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "andreracodex\\BiExchange\\": "src/"
+            "Andreracodex\\BiExchange\\": "src/"
         }
     },
     "extra": {
