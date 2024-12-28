@@ -7,8 +7,12 @@
     "autoload": {
         "psr-4": {
             "Andreracodex\\BiExchange\\": "src/"
-        }
+        },
+        "classmap": [
+            "database/migrations"
+        ]
     },
+    
     "authors": [
         {
             "name": "Tirta Rachmandiri Widiantoro",
