@@ -30,7 +30,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "php artisan vendor:publish --provider='AndreRacodex\\BiExchange\\FetchExchangeServiceProvider' --tag=migrations"
+            "php artisan vendor:publish --provider='AndreRacodex\\BiExchange\\FetchExchangeServiceProvider' --tag=migrations --tag=currency-model"
         ]
     },
     "minimum-stability": "stable",
