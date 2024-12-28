@@ -41,5 +41,5 @@ php artisan vendor:publish --provider="Andreracodex\BiExchange\FetchExchangeServ
 ```
 
 ```bash
-php artisan vendor:publish --provider="AndreRacodex\BiExchange\ServiceProvider" --tag=currency-model
+php artisan vendor:publish --provider="AndreRacodex\BiExchange\FetchExchangeServiceProvider" --tag="currency-model"
 ```
