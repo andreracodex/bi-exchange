@@ -26,13 +26,14 @@ class FetchExchangeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Publish the migrations
         $this->publishes([
-            __DIR__ . '/../database/migrations' => database_path('migrations'),
+            __DIR__.'/../../database/migrations' => database_path('migrations'),
         ], 'migrations');
 
-
+        // Publish the model (if you want to allow users to publish it)
         $this->publishes([
-            __DIR__ . '/../stubs/Currency.stub' => app_path('Models/Currency.php'),
-        ], 'currency-model');
+            __DIR__.'/../../src/Models/Currency.php' => app_path('Models/Currency.php'),
+        ], 'models');
     }
 }

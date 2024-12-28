@@ -1,6 +1,7 @@
 {
     "name": "andreracodex/bi-exchange",
     "description": "A package to fetch exchange rates from Bank Indonesia",
+    "keywords": ["laravel", "exchange", "currency", "rates", "bi", "bank-indonesia", "valas"],
     "type": "library",
     "license": "MIT",
     "authors": [
