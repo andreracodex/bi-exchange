@@ -29,8 +29,8 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\Providers\\FetchExchangeServiceProvider --tag=migrations",
-            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\Providers\\FetchExchangeServiceProvider --tag=models"
+            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\FetchExchangeServiceProvider --tag=migrations",
+            "php artisan vendor:publish --provider=Andreracodex\\BiExchange\\FetchExchangeServiceProvider --tag=models"
         ]
     },
     "minimum-stability": "stable",
