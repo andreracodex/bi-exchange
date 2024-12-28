@@ -29,5 +29,10 @@ class FetchExchangeServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../Database/Migrations/create_currencies_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_currencies_table.php'),
         ], 'migrations');
+
+
+        $this->publishes([
+            __DIR__ . '/Stubs/Currency.stub' => app_path('Models/Currency.php')
+        ], 'currency-model');
     }
 }
