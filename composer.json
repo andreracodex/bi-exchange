@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "andreracodex\\BiExchange\\ServiceProvider"
+                "andreracodex\\BiExchange\\FetchExchangeServiceProvider"
             ]
         }
     },
