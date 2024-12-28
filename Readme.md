@@ -2,6 +2,8 @@
 
 A Laravel package to fetch exchange rates from Bank Indonesia (BI) and update them in your database. This package scrapes the exchange rates from the official Bank Indonesia website and allows you to easily integrate it into your Laravel application.
 
+By: Tirta Rachmandiri
+
 ## Features
 
 - Fetch exchange rates from Bank Indonesia.
@@ -26,17 +28,18 @@ Fetch exchange rates from Bank Indonesia (BI) and update them in your database.
 php artisan ambil:rate
 ```
 
-
-
-
 ### Automatic Migration
 
 If you're using Laravel 5.5 or later, the migration will be automatically published when you install the package.
 
 ### Manual Migration
 
-If you want to manually publish the migration, you can use the following command:
+If you want to manually publish the migration and models, you can use the following command (if something wrong):
 
 ```bash
 php artisan vendor:publish --provider="Andreracodex\BiExchange\FetchExchangeServiceProvider" --tag="migrations"
+```
+
+```bash
+php artisan vendor:publish --provider="AndreRacodex\BiExchange\ServiceProvider" --tag=currency-model
 ```
