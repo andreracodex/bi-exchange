@@ -3,6 +3,7 @@
 namespace Andreracodex\BiExchange;
 
 use Illuminate\Support\ServiceProvider;
+use Andreracodex\BiExchange\Console\Commands\FetchExchange;
 
 class FetchExchangeServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,7 @@ class FetchExchangeServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            Console\Commands\FetchExchange::class,
+            FetchExchange::class,
         ]);
     }
 
