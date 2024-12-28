@@ -16,8 +16,13 @@ class BiExchangeServiceProvider extends ServiceProvider
 
             // Publishing the migration with a dynamic timestamp
             $this->publishes([
-                base_path('vendor/andreracodex/bi-exchange/database/migrations') => database_path('migrations'),
-            ], 'migrations');            
+                base_path('vendor/andreracodex/bi-exchange/src/databases/migrations') => database_path('migrations'),
+            ], 'migrations');         
+
+            // Publish Models
+            $this->publishes([
+                base_path('vendor/andreracodex/bi-exchange/src/Models') => app_path('Models'),
+            ], 'models');         
         }
     }
 
