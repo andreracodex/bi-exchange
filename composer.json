@@ -3,7 +3,6 @@
     "description": "A package to fetch exchange rates from Bank Indonesia",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Tirta Rachmandiri Widiantoro",
